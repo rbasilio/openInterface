@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Open Interface</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="lib/onsenui/js/onsenui.min.js"></script>
+    <link rel="stylesheet" href="components/loader.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script> <!-- FULL JQUERY WITH AJAX!!! -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+    body {
+      padding: 0px;
+      height: 100%
+    }
+
+    #topbar {
+      font-face: Trebuchet, "Sans Serif", Arial;
+      font-size: 20px;
+      color: white;
+      font-weight: 400;
+      text-align: center;
+    }
+  </style>
+  <script>
+    function getResolution() {
+      var carheight = (screen.height-36) * 0.27;
+      var botsheight = (screen.height-36) * 0.19;
+      var style = document.createElement('style');
+      style.type = 'text/css';
+      style.innerHTML = ".car  { height: "+ carheight + "px; }  .bots { height: "+ botsheight + "px; }";
+      document.getElementsByTagName('head')[0].appendChild(style);
+    }
+  </script>
+  <body style="background-color: #000000;" onload="getResolution();">
+    <ons-page>
+      <div class="container-fluid">
+        <div class="row">
+          <div id="topbar" style="height: 36px; width: 100%; background-color: #000000;">TopBar</div>
+        </div>
+        <div class="row car" >
+          <div style="width: 100%;background-color: #0000ff;">carousel 1</div>
+        </div>
+        <div class="row car" >
+          <div style="width: 100%;background-color: #f00000;">carousel 2</div>
+        </div>
+        <div class="row car">
+          <div style="width: 50%; background-color: #eeee00;">botao 1</div>
+          <div style="width: 50%; background-color: #00a000;">botao 2</div>
+        </div>
+        <div class="row">
+          <div style="width: 33%; background-color: #a0a000;" class="bots">aux 1</div>
+          <div style="width: 33%; background-color: #a000a0;" class="bots">aux 2</div>
+          <div style="width: 34%; background-color: #00a0a0;" class="bots">aux 3</div>
+        </div>
+      </div>
+    </ons-page>
+  </body>
+</html>

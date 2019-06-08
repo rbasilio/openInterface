@@ -1,0 +1,20 @@
+/**/
+.lista-produtos {
+  background-color: #3e3e3e;
+  border-bottom: #A0A0A0;
+  font-style: normal;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-style: normal;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #f0f0f0;
+  font-style: normal;
+}
