@@ -33,6 +33,7 @@
     function getResolution() {
       var carheight = (screen.height-36) * 0.27;
       var botsheight = (screen.height-36) * 0.19;
+      alert("car:"+carheight+" bot:"+botsheight);
       var style = document.createElement('style');
       style.type = 'text/css';
       style.innerHTML = ".car  { height: "+ carheight + "px; }  .bots { height: "+ botsheight + "px; }";
@@ -45,19 +46,19 @@
           <div id="topbar" style="height: 36px; width: 100%; background-color: #000000;">TopBar</div>
         </div>
         <div class="row car" >
-          <div style="width: 100%;background-color: #0000ff;">carousel 1</div>
+          <div style="width: 100%;background-color: #0000ff; text-align:center; vertical-align:middle;">carousel 1</div>
         </div>
         <div class="row car" >
-          <div style="width: 100%;background-color: #f00000;">carousel 2</div>
+          <div style="width: 100%;background-color: #f00000; text-align:center; vertical-align:middle;">carousel 2</div>
         </div>
         <div class="row car">
-          <div style="width: 50%; background-color: #eeee00;">botao 1</div>
-          <div style="width: 50%; background-color: #00a000;">botao 2</div>
+          <div style="width: 50%; background-color: #eeee00; text-align:center; vertical-align:middle;">botao 1</div>
+          <div style="width: 50%; background-color: #00a000; text-align:center; vertical-align:middle;">botao 2</div>
         </div>
         <div class="row">
-          <div style="width: 33%; background-color: #a0a000;" class="bots">aux 1</div>
-          <div style="width: 33%; background-color: #a000a0;" class="bots">aux 2</div>
-          <div style="width: 34%; background-color: #00a0a0;" class="bots">aux 3</div>
+          <div style="width: 33%; background-color: #a0a000; text-align:center; vertical-align:middle;" class="bots">aux 1</div>
+          <div style="width: 33%; background-color: #a000a0; text-align:center; vertical-align:middle;" class="bots">aux 2</div>
+          <div style="width: 34%; background-color: #00a0a0; text-align:center; vertical-align:middle;" class="bots">aux 3</div>
         </div>
       </div>
 
