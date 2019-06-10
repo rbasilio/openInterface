@@ -3,7 +3,7 @@
   <head>
     <title>Open Interface</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <script src="lib/onsenui/js/onsenui.min.js"></script>
@@ -36,7 +36,7 @@
       alert("car:" + carheight.toFixed(0) + " bot:" + botsheight.toFixed(0) + " scr:" + screen.height);
       var style = document.createElement('style');
       style.type = 'text/css';
-      style.innerHTML = ".car  { height: "+ carheight.toFixed(0) + "px; }  .bots { height: "+ botsheight.toFixed(0) + "px; }";
+      style.innerHTML = "body { height: " + screen.height + "; } .car  { height: "+ carheight.toFixed(0) + "px; }  .bots { height: "+ botsheight.toFixed(0) + "px; }";
       document.getElementsByTagName('head')[0].appendChild(style);
     }
   </script>
